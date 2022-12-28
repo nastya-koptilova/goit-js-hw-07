@@ -20,6 +20,7 @@ galleryEl.insertAdjacentHTML("beforeend", galleryCards.join(""));
 let instance = null;
 
 const onGalleryElClick = (event) => {
+  event.preventDefault();
   const { target } = event;
   if (target.nodeName !== "IMG") {
     return;
